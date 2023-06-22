@@ -5,9 +5,16 @@ import DetailsRestoPage from './src/Screens/DetailsRestoScreen';
 import DishDetailScreen from './src/Screens/DishDetailScreen';
 import Basket from './src/Screens/Basket';
 import OrderScreen from './src/Screens/OrderScreen';
+import OrderDetails from './src/Screens/OrderDetails';
+import { NavigationContainer } from '@react-navigation/native';
+
 
 export default function App() {
   return (
+
+
+    <NavigationContainer>
+
     <View style={styles.container}>
 {/*       
       <RestaurantItem restaurant={restaurants[0]}/>
@@ -21,10 +28,14 @@ export default function App() {
 
         {/* <Basket /> */}
 
-        <OrderScreen />
+        {/* <OrderScreen /> */}
+
+        <OrderDetails />
 
    <StatusBar style="light" />
     </View>
+
+    </NavigationContainer>
   );
 }
 

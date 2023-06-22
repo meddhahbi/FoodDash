@@ -2,23 +2,9 @@ import { View, Text, StyleSheet, FlatList } from "react-native";
 import restaurants from '../../../assets/data/restaurants.json';
 import {AntDesign} from '@expo/vector-icons';
 import { useState } from "react";
-
+import BasketDishIem from "../../Components/BasketDishItem";
 
 const restaurant = restaurants[0];
-
-const BasketDishIem = ({basketDish})=>{
-    return(
-        <View style={styles.row}>
-        <View style={styles.quantityContainer}>
-            <Text>1</Text>
-        </View>
-        <Text style={{fontWeight:"600"}}>{basketDish.name}</Text>
-        <Text style={{marginLeft:"auto"}}>$ {basketDish.price}</Text>
-    </View>
-
-    );
-};
-
 
 const Basket = ()=>{
 
