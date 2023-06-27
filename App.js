@@ -7,6 +7,7 @@ import Basket from './src/Screens/Basket';
 import OrderScreen from './src/Screens/OrderScreen';
 import OrderDetails from './src/Screens/OrderDetails';
 import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './src/Navigation';
 
 
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
 
     <NavigationContainer>
 
-    <View style={styles.container}>
+   
 {/*       
       <RestaurantItem restaurant={restaurants[0]}/>
       <RestaurantItem restaurant={restaurants[1]}/> */}
@@ -30,22 +31,15 @@ export default function App() {
 
         {/* <OrderScreen /> */}
 
-        <OrderDetails />
+        {/* <OrderDetails /> */}
+
+        <RootNavigator />
 
    <StatusBar style="light" />
-    </View>
+   
 
     </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    // padding:10,
-    // paddingVertical:30,
-  },
-});
+
